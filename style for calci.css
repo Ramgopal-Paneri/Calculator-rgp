@@ -32,6 +32,12 @@ button {
 	transition: all linear .1s;
 	box-shadow: 0 9px #999;
 	margin: .2rem .2em;	
+	padding: .2rem;
+	}
+	@media (min-width:425px) {
+		button{
+		font-size: 3rem;
+		}
 	}
 button:hover{
 	color: #000;
