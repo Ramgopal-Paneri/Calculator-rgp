@@ -38,7 +38,7 @@ buttons.forEach(element => {
 //           screenValue.replace('√'+${screenValue[rootElemNO]},rootEleString)
 //           console.log(screenValue)            
 //         }
-//             screen.value = eval(screenValue.replace('X', '*'));
+            screen.value = eval(screenValue.replace('X', '*'));
         }
     
         else {
