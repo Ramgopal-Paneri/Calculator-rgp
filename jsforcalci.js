@@ -1,17 +1,19 @@
 let screen = document.getElementById('screen');
-buttons = document.querySelectorAll('button');
+const buttons = document.getElementsByClassName('btn');
 let screenValue = '';
+let cross = document.getElementById('cross');
 // for (item of buttons) 
-buttons.forEach(element => {
+Array.from(buttons).forEach(element => {
     element.addEventListener('click', (e) => {
-        buttonText = e.target.innerText;
-        // console.log('Button text is ', buttonText);        
-        if (buttonText == 'X') {
-            screen.value = screenValue;
+        // console.log(e.target.firstElementChild)
+        let buttonText = e.target.innerText;
+
+        if(e.target.innerText == '√'){
+            buttonText = buttonText;
         }
-        if (buttonText == '√') {
-            buttonText = '√';
-            screenValue += buttonText;
+                // console.log('Button text is ', buttonText);        
+                      if (buttonText == 'X') {
+                        screenValue += buttonText;
             screen.value = screenValue;
         }
         else if (buttonText == 'C/AC') {
@@ -22,30 +24,32 @@ buttons.forEach(element => {
             if(screen.value == ''){
                 alert("enter any value to calculate ")
             }
-//             else{
-//                     if(screenValue.indexOf('√')){
-//                         console.log(screenValue.indexOf('√'))
-//                         console.log(screenValue.indexOf('√')+1)
-                        
-// let rootElemNO = screenValue.indexOf('√')+1;
-// console.log(screenValue[rootElemNO])
-//           rootEleValue = Math.sqrt(parseInt(screenValue[rootElemNO]));
-//           console.log(rootEleValue)
-//           rootEleString = rootEleValue.toString();
-//           console.log(rootEleString)
-//           elem = '√'+screenValue[rootElemNO];
-//           console.log(elem)
-//           screenValue.replace('√'+${screenValue[rootElemNO]},rootEleString)
-//           console.log(screenValue)            
-//         }
-            screen.value = eval(screenValue.replace('X', '*'));
+          screen.value = eval(screenValue.replace('X', '*'));
         }
-    
         else {
             screenValue += buttonText;
             screen.value = screenValue;
         }
     }
     )
+    cross.addEventListener('click',backSpace);
+        
 }
 );
+function backSpace(){
+// const arr =  Array.from(screenValue);
+//     arr.pop();
+    
+//     const strVal = arr.toString();
+//     screen.value = strVal;
+//     screenValue = strVal
+//     console.log(screenValue)
+//     console.log(screen.value)
+
+// console.log(arr)
+// console.log(strVal)
+     screen.value = screen.value.substring(0,screenValue.length-1);   
+    screenValue = screen.value;
+
+   
+}
