@@ -88,7 +88,7 @@ h2{
 }
 #utility{
 width: 30%;font-size:2.5rem;
-}#u-calc{width: 20%;}#res{width: 10%;margin-left: .5rem;font-size:2.5rem;}
+}#u-calc{width: 20%;}#res{width: 20%;margin-left: .5rem;font-size:2.5rem;}
 @media (max-width:425px) {
 #utility,#res{
 	font-size: 1.5rem;
