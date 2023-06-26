@@ -65,7 +65,7 @@ button:active{
 	background-color: #EDF1FF;
 	border-radius: 5rem;
 	display: inline-block;
-	transition: all linear .3s;
+	transition: all linear .2s;
 	width:90% ;
 	height: 100%;
 margin: auto;
@@ -81,4 +81,16 @@ width: max-content;
 	font-family: 'Courier New', Courier, monospace;
 outline: .7rem solid #9599E2;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+h2{
+	display: inline;
+	font-size: 3rem;
+}
+#utility{
+width: 30%;font-size:2.5rem;
+}#u-calc{width: 20%;}#res{width: 10%;margin-left: .5rem;font-size:2.5rem;}
+@media (max-width:425px) {
+#utility,#res{
+	font-size: 1.5rem;
+	}
 }

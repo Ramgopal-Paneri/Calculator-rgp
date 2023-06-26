@@ -13,11 +13,10 @@
         <div class="calculator">
             <h1>Calculator</h1><br>
             <input type="text" name="screen" id="screen" placeholder="enter " autofocus maxlength="40">
-            <br><br>
             <table>
                 <tr>
                     <td><button class="btn">/</button></td>
-                    <td><button class="btn">√</button></td>
+                    <td><button  onclick="showELE()">√</button></td>
                     <td><button class="btn">^</button></td>
                     <td><button class="btn">!</button></td>
                 </tr>
@@ -52,6 +51,12 @@
                     <td><button class="btn">=</button></td>
                 </tr>
             </table>
+            <div class="utility">
+                <label for="utility">
+                   <h2><b> √</b></h2>
+            </label>
+            <input type="text" id="utility" autofocus placeholder="enter value for √"><input type="text" id="res"><button id="u-calc" onclick="sqRoot()">get</button>
+        </div>
         </div>
     </div>
 </body>

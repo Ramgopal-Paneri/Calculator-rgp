@@ -8,9 +8,7 @@ Array.from(buttons).forEach(element => {
         // console.log(e.target.firstElementChild)
         let buttonText = e.target.innerText;
 
-        if(e.target.innerText == '√'){
-            buttonText = buttonText;
-        }
+     
                 // console.log('Button text is ', buttonText);        
                       if (buttonText == 'X') {
                         screenValue += buttonText;
@@ -36,20 +34,21 @@ Array.from(buttons).forEach(element => {
         
 }
 );
+
 function backSpace(){
-// const arr =  Array.from(screenValue);
-//     arr.pop();
-    
-//     const strVal = arr.toString();
-//     screen.value = strVal;
-//     screenValue = strVal
-//     console.log(screenValue)
-//     console.log(screen.value)
-
-// console.log(arr)
-// console.log(strVal)
      screen.value = screen.value.substring(0,screenValue.length-1);   
-    screenValue = screen.value;
-
-   
+    screenValue = screen.value;   
+}
+const rootUtility = document.getElementsByClassName('utility');
+rootUtility[0].style.display = "none";
+function sqRoot(){
+    let utilityInp = document.getElementById('utility');
+let utilityInpVal = utilityInp.value;
+let outPut = document.getElementById('res');   
+console.log(utilityInpVal);
+    let root = Math.sqrt(utilityInpVal);
+    outPut.value = root;
+}
+function showELE(){
+        rootUtility[0].style.display = "block";   
 }
