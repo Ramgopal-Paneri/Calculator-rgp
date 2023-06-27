@@ -18,7 +18,7 @@
                     <td><button class="btn">/</button></td>
                     <td><button  onclick="showELE()">√</button></td>
                     <td><button onclick="showPow()">^</button></td>
-                    <td><button >!</button></td>
+                    <td><button onclick="showFact()">!</button></td>
                 </tr>
                 <tr>
                     <td><button class="btn">(</button></td>
@@ -66,6 +66,13 @@
         <input type="text" id="ans" disabled>
         <button class="u-calc" onclick="power()">get</button>
     </div>
+
+    <div id="factorial">
+        <label for="fact">
+           <h2><b> ! </b></h2>
+    </label>
+    <input type="text" id="fact" autofocus placeholder="enter value for !"><input type="text" id="out" disabled><button class="u-calc" onclick="factorial()">get</button>
+</div>
 
         </div>
     </div>

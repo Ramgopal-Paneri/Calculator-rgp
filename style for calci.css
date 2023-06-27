@@ -2,7 +2,7 @@ html,body{
 	height: 100%;
 }
 .container {
-    width:98%;
+    width:100%;
 	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
@@ -18,7 +18,6 @@ html,body{
 table {
 	margin-top: 1rem;
 	margin: auto;
-
 }
 input {
 	border-radius: 1rem;
@@ -39,11 +38,6 @@ button {
 	margin: .2rem .2em;	
 	padding: .1rem;
 	}
-	@media (min-width:425px) {
-		button{
-		font-size: 3rem;
-		}
-	}
 button:hover{
 	color: #000;
 	background-image: linear-gradient(
@@ -59,15 +53,16 @@ button:active{
 	transform: translateY(4px);
 }
 .calculator {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	margin-bottom: 1rem;
 	border: 1rem solid #54b3d6;
 	background-color: #EDF1FF;
-	border-radius: 5rem;
+	border-top-left-radius: 5rem;border-top-right-radius: 5rem;
+border-bottom-left-radius: 2.5rem;border-bottom-right-radius: 2.5rem;
 	display: inline-block;
 	transition: all linear .2s;
 	width:90% ;
-	height: 100%;
+	height: 98%;
 margin: auto;
 }
 h1 {	
@@ -84,20 +79,20 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 h2{
 	display: inline;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 /* for sq root */
-.utility{
+.utility,.factorial{
 border-top: #8BC6EC solid .3rem;
 }
-#utility{
-width: 30%;font-size:2.5rem;
-}.u-calc{width: 20%;}#res{width: 20%;margin-left: .5rem;font-size:2.5rem;}
+#utility,#fact{
+width: 30%;font-size:1.5rem;
+}.u-calc{width: 20%;}#res,#out{width: 20%;margin-left: .5rem;font-size:1.5rem;}
 @media (max-width:425px) {
-#utility,#res,#pow,#powNUM,#ans{
+#utility,#res,#pow,#powNUM,#ans,#out,#fact{
 	font-size: 1.5rem;
 	}
 }
 /* for power */
-#power{border-top: #8BC6EC solid .3rem;}
-#pow,#powNUM,#ans{width: 18%;font-size:2rem;}
+#power,#factorial{border-top: #8BC6EC solid .3rem;}
+#pow,#powNUM,#ans{width: 18%;font-size:1.5rem;}
