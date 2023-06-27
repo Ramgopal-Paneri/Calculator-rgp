@@ -86,11 +86,18 @@ h2{
 	display: inline;
 	font-size: 3rem;
 }
+/* for sq root */
+.utility{
+border-top: #8BC6EC solid .3rem;
+}
 #utility{
 width: 30%;font-size:2.5rem;
-}#u-calc{width: 20%;}#res{width: 20%;margin-left: .5rem;font-size:2.5rem;}
+}.u-calc{width: 20%;}#res{width: 20%;margin-left: .5rem;font-size:2.5rem;}
 @media (max-width:425px) {
-#utility,#res{
+#utility,#res,#pow,#powNUM,#ans{
 	font-size: 1.5rem;
 	}
 }
+/* for power */
+#power{border-top: #8BC6EC solid .3rem;}
+#pow,#powNUM,#ans{width: 18%;font-size:2rem;}

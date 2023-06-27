@@ -52,3 +52,18 @@ console.log(utilityInpVal);
 function showELE(){
         rootUtility[0].style.display = "block";   
 }
+const powerEle = document.getElementById('power');
+powerEle.style.display = "none";
+function power(){
+    let pow1st = document.getElementById('pow');
+let pow1stVal = pow1st.value;
+let powNUM = document.getElementById('powNUM');   
+let powNUMVal = powNUM.value;
+let ans = document.getElementById('ans');
+    let finalVal = Math.pow(pow1stVal,powNUMVal);
+    ans.value = finalVal;
+}
+
+function showPow(){
+    powerEle.style.display = "block";
+}
