@@ -89,4 +89,5 @@ width: 30%;font-size:x-large;
 #pow,#powNUM,#ans{width: 18%;font-size:1.5rem;}
 #utility button,#power  button,#factorial button{
 	margin:.2rem .2rem;
-}
+
+transform: r;}

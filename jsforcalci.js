@@ -83,3 +83,11 @@ document.getElementById('factorial').style.display = "none";
 function showFact() {
     document.getElementById('factorial').style.display = "block";
 }
+let element = document.getElementsByTagName('td');
+let targetVal = Array.from(element);
+anime({
+
+        targets: targetVal,
+        rotate: 360,
+        delay: anime.stagger(75) // increase delay by 100ms for each elements.
+      });
