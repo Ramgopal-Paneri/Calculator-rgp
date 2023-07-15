@@ -10,10 +10,34 @@
 </head>
 <body>
     <div class="container">
+       
         <div class="calculator">
+       
             <h1>Calculator</h1><br>
-            <input type="text" name="screen" id="screen" placeholder="enter " autofocus maxlength="40">
+            <input type="text" name="screen" id="screen" placeholder="..." autofocus maxlength="40">
             <table>
+                    <div class="utility">
+                        <label for="utility">
+                           <h2><b> √</b></h2>
+                    </label>
+                    <input type="number" id="utility" autofocus placeholder="enter value for √"><input type="text" id="res" disabled><button  class="u-calc" onclick="sqRoot()">get</button>
+                </div>
+                <div id="power">
+                    <input type="number" id="pow" autofocus placeholder="enter number">
+                    <h2><b>^</b></h2>
+                    <input type="number" id="powNUM" placeholder="enter its power"><h2><b>=</b></h2>
+                    <input type="text" id="ans" disabled>
+                    <button class="u-calc"  onclick="power()">get</button>
+                </div>
+                
+                <div id="factorial">
+                    <label for="fact">
+                       <h2><b> ! </b></h2>
+                </label>
+                <input type="number" id="fact" autofocus placeholder="enter value for !"><input type="text" id="out" disabled><button  class="u-calc" onclick="factorial()">get</button>
+                </div>
+             
+            
                 <tr>
                     <td><button class="btn">/</button></td>
                     <td><button  onclick="showELE()">√</button></td>
@@ -51,29 +75,7 @@
                     <td><button class="btn">=</button></td>
                 </tr>
             </table>
-            
-            <div class="utility">
-                <label for="utility">
-                   <h2><b> √</b></h2>
-            </label>
-            <input type="text" id="utility" autofocus placeholder="enter value for √"><input type="text" id="res" disabled><button class="u-calc" onclick="sqRoot()">get</button>
-        </div>
-
-        <div id="power">
-        <input type="text" id="pow" autofocus placeholder="enter number">
-        <h2><b>^</b></h2>
-        <input type="text" id="powNUM" placeholder="enter its power"><h2><b>=</b></h2>
-        <input type="text" id="ans" disabled>
-        <button class="u-calc" onclick="power()">get</button>
-    </div>
-
-    <div id="factorial">
-        <label for="fact">
-           <h2><b> ! </b></h2>
-    </label>
-    <input type="text" id="fact" autofocus placeholder="enter value for !"><input type="text" id="out" disabled><button class="u-calc" onclick="factorial()">get</button>
-</div>
-
+  
         </div>
     </div>
 </body>

@@ -45,7 +45,6 @@ function sqRoot() {
     let utilityInp = document.getElementById('utility');
     let utilityInpVal = utilityInp.value;
     let outPut = document.getElementById('res');
-    console.log(utilityInpVal);
     let root = Math.sqrt(utilityInpVal);
     outPut.value = root;
 }
@@ -77,8 +76,6 @@ function factorial() {
     for (let index = 1; index < factNUMVal; index++) {
         res = res * temp;
         temp = temp - 1;
-        console.log(temp);
-        console.log(res);
     }
     FactOUt.value = res;
 }
